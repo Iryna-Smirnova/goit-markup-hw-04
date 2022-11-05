@@ -2,8 +2,10 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --primary-accent-color: #2196f3;
+  --secondary-accent-color: #AFB1B8;
   --white-color: #ffffff;
   --black-color: #000000;
+  --
 }
 
 body {
@@ -110,6 +112,20 @@ a {
   color: var(--primary-accent-color);
 }
 
+.info-icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  fill: var(--secondary-text-color);
+  stroke: var(--secondary-text-color);
+}
+
+.info-icon:hover {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 a.current-page:link,
 a.current-page:visited {
   color: var(--primary-accent-color);
@@ -199,6 +215,20 @@ a.current-page:visited {
   margin-left: 30px;
 }
 
+.features-link {
+  padding: 25px 100px;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  text-align: center;
+  justify-content: center;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
+.features-box {
+  padding-top: 30px;
+}
 .features-title {
   margin-top: 0;
   margin-right: 0;
@@ -276,6 +306,45 @@ a.current-page:visited {
   padding-left: 0;
 }
 
+.team-list .social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 16px;
+ }
+
+.team-list .social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.team-list .social-item:last-child {
+  margin-right: 0;
+}
+
+.team-list .social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+
+.team-list .social-link:hover {
+  background-color: var(--primary-accent-color);
+} 
+
+.team-list .social-icon {
+  fill: var(--secondary-accent-color);
+}
+
+.team-list .social-link:hover .social-icon {
+  fill: var(--white-color);
+}
+
 .team-item {
   background: var(--white-color);
   /* material shadow v1 */
@@ -283,6 +352,7 @@ a.current-page:visited {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-list .team-item + .team-item {
   margin-left: 30px;
 }
@@ -292,8 +362,6 @@ a.current-page:visited {
   width: 100%;
   height: auto;
 }
-
-/* НАША КОМАНДА */
 
 .personal {
   padding: 30px 10px;
@@ -330,6 +398,57 @@ a.current-page:visited {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+/* Клієнти */
+
+.section-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.customers-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+.customers-list .customers-item + .customers-item {
+  margin-left: 30px;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--secondary-accent-color);
+  border-radius: 4px;
+}
+
+.customer-icon {
+  display: flex;
+  padding: 0;
+  width: 106px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--secondary-accent-color);
+}
+
+.customers-list .customers-item:hover .customer-icon {
+  fill: var(--primary-accent-color);
 }
 
 /* Портфоліо */
@@ -407,6 +526,11 @@ a.current-page:visited {
   margin-bottom: 0;
 }
 
+
+.working-list:first-child {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .working-img {
   display: block;
   width: 100%;
@@ -447,7 +571,8 @@ a.current-page:visited {
 }
 
 .under {
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-logo {
@@ -502,4 +627,60 @@ a.current-page:visited {
 
 .contact-list:hover {
   color: var(--primary-accent-color);
+}
+
+.social {
+  margin-left: 70px;
+}
+
+.social .social-icons {
+  display: flex;
+ 
+  margin: 0;
+  padding: 0;
+  align-content: flex-start;
+  
+ }
+
+.social .social-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.social .social-icons {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 16px;
+ }
+ 
+.social .social-icons .social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.social .social-icons .social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social .social-icon {
+  fill: var(--white-color);
+}
+
+.social .social-link:hover {
+  background-color: var(--primary-accent-color);
 }

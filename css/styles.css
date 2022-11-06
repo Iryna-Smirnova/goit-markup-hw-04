@@ -25,6 +25,7 @@ a {
 
 .page-header {
   margin: 0 auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -112,7 +113,7 @@ a {
   vertical-align: middle;
   align-items: center;
   justify-content: center;
-  stroke: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .info-link:hover {
@@ -327,7 +328,8 @@ a.current-page:visited {
   background-color: var(--white-color);
 }
 
-.team-list .social-link:hover {
+.team-list .social-link:hover,
+.team-list .social-link:focus {
   background-color: var(--primary-accent-color);
 }
 
@@ -424,7 +426,7 @@ a.current-page:visited {
   margin-left: 30px;
 }
 
-.customers-item {
+.customers-team {
   width: 170px;
   height: 92px;
   border: 1px solid var(--secondary-accent-color);
@@ -442,11 +444,12 @@ a.current-page:visited {
   fill: var(--secondary-accent-color);
 }
 
-.customers-list .customers-item:hover .customer-icon {
+.customers-list .customers-team:hover .customer-icon {
   fill: var(--primary-accent-color);
 }
 
-.customers-item:hover {
+.customers-team:hover,
+.customers-team:focus {
   border: 1px solid var(--primary-accent-color);
 }
 
@@ -477,15 +480,6 @@ a.current-page:visited {
   line-height: 1.62;
 }
 
-.button-filter.primary {
-  padding: 6px 25px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-
-  background-color: var(--primary-accent-color);
-  color: var(--white-color);
-}
-
 .button-filter.secondary {
   padding: 6px 22px;
   border-radius: 4px;
@@ -493,6 +487,14 @@ a.current-page:visited {
 
   background-color: #f5f4fa;
   color: var(--primary-text-color);
+}
+
+.button-filter.secondary:hover,
+.button-filter.secondary:focus {
+  background-color: var(--primary-accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-filter {
@@ -525,7 +527,14 @@ a.current-page:visited {
   margin-bottom: 0;
 }
 
-.working-list:first-child {
+.working-link {
+  display: block;
+}
+
+.working-link:hover,
+.working-link:focus {
+  background: var(--white-color);
+  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -538,7 +547,9 @@ a.current-page:visited {
 
 .titled {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .working-exemple {
@@ -624,7 +635,8 @@ a.current-page:visited {
   cursor: pointer;
 }
 
-.contact-list:hover {
+.contact-list:hover,
+.contact-list:focus {
   color: var(--primary-accent-color);
 }
 
@@ -679,6 +691,7 @@ a.current-page:visited {
   fill: var(--white-color);
 }
 
-.social .social-link:hover {
+.social .social-link:hover,
+.social .social-link:focus {
   background-color: var(--primary-accent-color);
 }

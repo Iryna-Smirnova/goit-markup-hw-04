@@ -116,7 +116,8 @@ a {
   fill: currentColor;
 }
 
-.info-link:hover {
+.info-link:hover,
+.info-link:focus {
   color: var(--primary-accent-color);
   fill: var(--primary-accent-color);
 }
@@ -211,12 +212,11 @@ a.current-page:visited {
 }
 
 .features-link {
-  padding: 25px 100px;
   display: flex;
   width: 270px;
   height: 120px;
-  text-align: center;
   justify-content: center;
+  align-items: center;
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -337,7 +337,8 @@ a.current-page:visited {
   fill: var(--secondary-accent-color);
 }
 
-.team-list .social-link:hover .social-icon {
+.team-list .social-link:hover .social-icon,
+.team-list .social-link:focus .social-icon {
   fill: var(--white-color);
 }
 
@@ -444,7 +445,8 @@ a.current-page:visited {
   fill: var(--secondary-accent-color);
 }
 
-.customers-list .customers-team:hover .customer-icon {
+.customers-list .customers-team:hover .customer-icon,
+.customers-list .customers-team:focus .customer-icon {
   fill: var(--primary-accent-color);
 }
 
@@ -533,8 +535,6 @@ a.current-page:visited {
 
 .working-link:hover,
 .working-link:focus {
-  background: var(--white-color);
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
